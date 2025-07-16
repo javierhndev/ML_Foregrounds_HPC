@@ -1,0 +1,26 @@
+name: pytorch-nightly
+channels:
+  - pytorch-nightly
+  - photosynthesis-team
+  - conda-forge
+  - pytorch
+dependencies:
+  - pytorch
+  - wandb
+  - tqdm
+  - torchvision
+  - torchaudio
+  - torchmetrics
+  - lightning
+  - pandas
+  - numpy
+  - matplotlib
+  - scipy
+  - timm
+  - onnxruntime
+  - seaborn
+  - ipykernel
+  - ipywidgets
+  - jupyter
+  - piq
+  - python-dotenv
