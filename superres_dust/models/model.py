@@ -101,7 +101,7 @@ class Model(pl.LightningModule):
             stage: train, val, or test.
         """
         data, resol = batch
-        preds = self(data, resol)
+        preds = self(data, resol).contiguous()
         target = data[:, -2:, ...]
 
         if stage == "train":

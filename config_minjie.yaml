@@ -1,0 +1,118 @@
+wandb_version: 1
+
+wandb:
+  desc: null
+  value:
+    project: dust-superres
+    online: true
+    log_model: true
+    run:
+      id: rs3xiln2
+trainer:
+  desc: null
+  value:
+    accelerator: mps
+    strategy: auto
+    checkpoint_path: /home/minjilei/Dropbox/Documents/Research/projects/foreground_transformer/logs/wandb/run-20240628_123659-rs3xiln2/files/checkpoints/epoch_00209-val_loss_0.00366.ckpt
+    devices: auto
+    epochs: 1000
+    log_maps_every_n_epochs: 5
+    log_every_n_steps: 50
+    overfit_batches: 0
+dataset:
+  desc: null
+  value:
+    batch_size: 1
+    debug: false
+    dir: /home/minjilei/Dropbox/Documents/Research/projects/foreground_transformer/data
+    num_workers: 9
+model:
+  desc: null
+  value:
+    name: attention
+    memory_efficient: false
+    num_channels: 32
+    num_res_blocks_encoder: 4
+    num_res_blocks_decoder: 5
+    dropout: 0.0
+    nhead: 1
+    num_layers: 1
+    use_resolution_embedding: true
+    learning_rate: 0.0001
+    b1: 0.9
+    b2: 0.999
+    batch_size: 1
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.3
+    cli_version: 0.16.5
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1719603419
+    t:
+      1:
+      - 1
+      - 9
+      - 41
+      - 51
+      - 55
+      - 103
+      2:
+      - 1
+      - 9
+      - 41
+      - 51
+      - 55
+      - 103
+      3:
+      - 1
+      - 5
+      - 7
+      - 14
+      - 16
+      - 23
+      - 42
+      - 62
+      4: 3.12.3
+      5: 0.16.5
+      8:
+      - 4
+      - 5
+      13: darwin-arm64
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+config:
+  desc: null
+  value:
+    name: attention
+    memory_efficient: false
+    num_channels: 32
+    num_res_blocks_encoder: 4
+    num_res_blocks_decoder: 5
+    dropout: 0.0
+    nhead: 1
+    num_layers: 1
+    use_resolution_embedding: true
+    learning_rate: 0.0001
+    b1: 0.9
+    b2: 0.999
+    batch_size: 1
+metrics:
+  desc: null
+  value: null
+extra_metrics:
+  desc: null
+  value: null
+metrics_on_inputs:
+  desc: null
+  value: null
+extra_metrics_on_inputs:
+  desc: null
+  value: null
+total_steps:
+  desc: null
+  value: 23576000

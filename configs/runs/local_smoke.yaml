@@ -1,0 +1,26 @@
+wandb:
+  project: dust-superres
+  online: False
+  log_model: True
+  run:
+    id:
+
+trainer:
+  accelerator: cpu
+  strategy: auto
+  checkpoint_path:
+  devices: 1
+  epochs: 1
+  log_maps_every_n_epochs: 0
+  log_every_n_steps: 50
+  overfit_batches: 1
+
+dataset:
+  batch_size: 1
+  debug: True
+  dir: /home/javierhn/datasets/ml_foregrounds
+  num_workers: 0
+
+model:
+  name: attention
+  memory_efficient: False
